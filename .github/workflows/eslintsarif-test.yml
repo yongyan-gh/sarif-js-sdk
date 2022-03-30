@@ -24,7 +24,6 @@ jobs:
 
       - name: Run local eslint + sarif formatter
         run: npx eslint ./packages/eslint-formatter-sarif
-             --config .eslintrc.js
              --ext .js,.jsx,.ts,.tsx 
              --format ./packages/eslint-formatter-sarif/sarif.js
              --output-file eslint-results.sarif
