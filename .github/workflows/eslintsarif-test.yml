@@ -21,7 +21,6 @@ jobs:
           
       - name: Install ESLint SARIF formatter dependencies
         run: npm install
-        working-directory: ./packages/eslint-formatter-sarif
 
       - name: Run local eslint + sarif formatter
         run: npx eslint ./packages/eslint-formatter-sarif
